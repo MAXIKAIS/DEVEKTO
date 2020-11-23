@@ -1,0 +1,258 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+    <div class="heading dark-bg">
+        <div class="row">
+            <div class="col-sm-12 head jumbotron">
+                <h1 class="display-3">Max KAISER</h1>
+                <p class="lead" id="subtitle">Web & Mobile Developer</p>
+                <hr class="my-4">
+                <div class="row">
+                    <div class="col-4"></div>
+                    <div class="col-4">
+                        <nav>
+                            <ul class="list-inline links header-link">
+                                <li><a class="btn btn-default btn-lg" href="https://github.com/MAXIKAIS"
+                                       title="Me on GitHub" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+                                <li><a class="btn btn-default btn-lg" href="https://www.linkedin.com/in/maxime-kaiser/"
+                                       title="Me on Linkedin" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+                                </li>
+                                <li><a class="btn btn-default btn-lg" href="https://www.instagram.com/max_k4iser/?hl=fr"
+                                       title="Me on Instagram" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                                </li>
+                                <li><a class="btn btn-default btn-lg" href="https://www.facebook.com/Miasme4/"
+                                       title="Me on Facebook" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <body>
+
+    <div class="container">
+        <section id="about" class="main-nav">
+            <h1 class=""><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About Me</h1>
+            <span class="animate-border border-black about-anime"></span>
+            <div class="row row-about">
+                <div class="col-sm-4 ">
+                    <img src="/image/apropos.jpg" alt="description" title="tool tip"
+                         class="img-circle rounded-circle shadow up-hover avatar">
+                </div>
+                <div class="col-sm-8 ">
+                    <h2 class="text-primary stm-font">Skills</h2>
+                    <p>Full Stack Web Development</p>
+                    <h2 class="text-primary stm-font">Tools</h2>
+                    <p>HTML, CSS, SASS, PHP - Symfony, JavaScript - jQuery, Bootstrap, MySQL - Git</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiences" class="main-nav">
+            <h1 class=""><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                Experiences</h1>
+            <span class="animate-border border-black experience-anime"></span>
+
+        </section>
+
+{#        <section id="home" class="main-nav">#}
+{#            <div class="">#}
+{#                <h1 class=""><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>#}
+{#                    Interests</h1>#}
+{#                <span class="animate-border border-black interest-anime"></span>#}
+{#                <div class="row showcase stm-font row-about">#}
+{#                    <div class="col-sm-4 hidden-xs" data-toggle="modal" data-target="#devModal">#}
+{#                        <div class="well shadow up-hover color-hover">#}
+{#                            <h1><i class="fa fa-code"></i></h1>#}
+{#                            <h2>Development</h2>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="col-sm-4 hidden-xs" data-toggle="modal" data-target="#musicModal">#}
+{#                        <div class="well shadow up-hover color-hover">#}
+{#                            <h1><i class="fas fa-guitar"></i></h1>#}
+{#                            <h2>Music</h2>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="col-sm-4 hidden-xs" data-toggle="modal" data-target="#sportModal">#}
+{#                        <div class="well shadow up-hover color-hover thumbnail shadow up-hover">#}
+{#                            <h1><i class="fas fa-futbol"></i></h1>#}
+{#                            <h2>Sport</h2>#}
+{#                            <div class="cust-caption">#}
+{#                                <a href=""><h3 class="stm-font">Test</h3></a>#}
+{#                                <p>csvsdvsdvsds</p>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </section>#}
+
+        <section id="portfolio" class="main-nav"><!--start portfolio-->
+            <h1 class=""><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                Interests</h1>
+            <span class="animate-border border-black interest-anime"></span>
+            <div class="container portfolio-container">
+                <div class=""><!---start row-->
+                    <div class="row showcase stm-font row-about">
+                        <div class="col-sm-4 col-md-4" data-toggle="modal" data-target="#devModal"><!--start element 1-->
+                            <div class="thumbnail well shadow up-hover color-hover portfolio-card">
+                                <h1><i class="fa fa-code"></i></h1>
+                                <h2>Development</h2>
+                                <div class="cust-caption">
+                                    <p>Discover new techniques and technologies, become familiar with them and reuse them in the
+                                        service of innovation. Here is my new hobby.
+                                        A project for me? Contact me right there.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4" data-toggle="modal" data-target="#musicModal"><!--start element 1-->
+                            <div class="thumbnail well shadow up-hover color-hover portfolio-card">
+                                <h1><i class="fas fa-guitar"></i></h1>
+                                <h2>Music</h2>
+                                <div class="cust-caption">
+                                    <p>Create new songs alone or in groups. I tap into the music
+                                        inspiration and motivation. The sound accompanies me on a daily basis. If you
+                                        want to find out
+                                        my dark part is here.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4" data-toggle="modal" data-target="#sportModal"><!--start element 1-->
+                            <div class="thumbnail well shadow up-hover color-hover portfolio-card">
+                                <h1><i class="fas fa-futbol"></i></h1>
+                                <h2>Sport</h2>
+                                <div class="cust-caption">
+                                    <p>Amateur of Indoor Soccer, I organize many meetings and tournaments.
+                                        Founder of a community of players with more than 100 members,
+                                        I would be delighted to meet you on the fields.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!---end row-->
+        </section> <!--end portfolio-->
+
+        <!-- Modal -->
+        <div class="modal fade" id="devModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="exampleModalLabel"><i class="fa fa-code"></i> Development</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Discover new techniques and technologies, become familiar with them and reuse them in the
+                        service of innovation. Here is my new hobby.
+                        A project for me? Contact me right there.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="musicModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="exampleModalLabel"><i class="fas fa-guitar"></i> Music</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Create new songs alone or in groups. I tap into the music
+                        inspiration and motivation. The sound accompanies me on a daily basis. If you want to find out
+                        my dark part is here.</p>
+                        <iframe width="464" height="260" src="https://www.youtube.com/embed/Fu-2L39bYIg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="sportModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="exampleModalLabel"><i class="fas fa-futbol"></i> Sport</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Amateur of Indoor Soccer, I organize many meetings and tournaments.
+                        Founder of a community of players with more than 100 members,
+                        I would be delighted to meet you on the fields.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="portfolio" class="main-nav"><!--start portfolio-->
+            <h1 class=""><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Portfolio</h1>
+            <span class="animate-border border-black portfolio-anime"></span>
+            <div class="container portfolio-container">
+                {# <div class="row row-about"><!---start row--> #}
+                {# {% set i = 0 %} #}
+                {# {% for portfolio in portfolios %} #}
+                {# {% set i = i+1 %} #}
+                {# <div class="col-sm-4 col-md-4"><!--start element 1--> #}
+                <div class="thumbnail shadow up-hover portfolio-card">
+                    {# <img src="{{ vich_uploader_asset(portfolio, 'imageFile')|imagine_filter('reduc') }}" #}
+                    {# alt="{{ portfolio.title }}"/> #}
+                    {# <div class="cust-caption"> #}
+                    {# <a href="{{ portfolio.url }}"><h3 #}
+                    {# class="stm-font">{{ portfolio.title }}</h3></a> #}
+                    {# <p>{{ portfolio.description |raw }}</p> #}
+                    {# </div> #}
+                    <div id="carousel">
+                        {% set i = 0 %}
+                        {% for portfolio in portfolios %}
+                        {% set i = i+1 %}
+                        <figure>
+                            <a href="" data-toggle="modal" data-target=".bd-example-modal-xl">
+                                <img src="{{ vich_uploader_asset(portfolio, 'imageFile')|imagine_filter('reduc') }}"
+                                     alt="">
+                            </a>
+                        </figure>
+                        {% endfor %}<!--end element 1-->
+                    </div>
+                    {# </div> #}
+                    {# </div> #}
+                    {# {% endfor %}<!--end element 1--> #}
+                </div>
+            </div><!---end row-->
+        </section> <!--end portfolio-->
+
+        <!-- Portfolio Modal -->
+
+        <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    ICI detail du portfolio
+                </div>
+            </div>
+        </div>
+
+
+    </div><!--end container-->
+
+    </body>
+
+
+{% endblock %}
+{% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+{% endblock %}
