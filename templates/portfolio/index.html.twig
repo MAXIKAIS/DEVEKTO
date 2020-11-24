@@ -3,37 +3,25 @@
 {% block title %}Portfolio index{% endblock %}
 
 {% block body %}
-    <h1>Portfolio index</h1>
-
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Title</th>
-                <th>Image</th>
-                <th>Description</th>
-                <th>actions</th>
-            </tr>
-        </thead>
-        <tbody>
+    <ul class="cards">
         {% for portfolio in portfolios %}
-            <tr>
-                <td>{{ portfolio.id }}</td>
-                <td>{{ portfolio.title }}</td>
-                <td>{{ portfolio.image }}</td>
-                <td>{{ portfolio.description }}</td>
-                <td>
-                    <a href="{{ path('portfolio_show', {'id': portfolio.id}) }}">show</a>
-                    <a href="{{ path('portfolio_edit', {'id': portfolio.id}) }}">edit</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="5">no records found</td>
-            </tr>
+        <li class="cards__item">
+            <div class="card">
+                <div class="card__image card__image--fence">
+                    <img src="{{ vich_uploader_asset(portfolio, 'imageFile')|imagine_filter('portfolio') }}"
+                         alt="">
+                </div>
+                <div class="card__content">
+                    <div class="card__title">{{ portfolio.title }}</div>
+                    <p class="card__text">{{ portfolio.description|raw }}</p>
+                    <a href="{{ path('portfolio_show', {'id': portfolio.id}) }}">
+                        <button class="btn btn--block card__btn">Project details</button>
+                    </a>
+                </div>
+            </div>
+        </li>
         {% endfor %}
-        </tbody>
-    </table>
+    </ul>
 
-    <a href="{{ path('portfolio_new') }}">Create new</a>
+
 {% endblock %}

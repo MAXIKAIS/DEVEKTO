@@ -14,16 +14,23 @@
                     <div class="col-4">
                         <nav>
                             <ul class="list-inline links header-link">
-                                <li><a class="btn btn-default btn-lg" href="https://github.com/MAXIKAIS"
-                                       title="Me on GitHub" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
-                                <li><a class="btn btn-default btn-lg" href="https://www.linkedin.com/in/maxime-kaiser/"
-                                       title="Me on Linkedin" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+                                <li><a class="btn btn-default btn-lg color-hover" href="https://github.com/MAXIKAIS"
+                                       title="Me on GitHub" target="_blank"><i
+                                                class="fa fa-github fa-2x select-icon"></i></a></li>
+                                <li><a class="btn btn-default btn-lg color-hover"
+                                       href="https://www.linkedin.com/in/maxime-kaiser/"
+                                       title="Me on Linkedin" target="_blank"><i
+                                                class="fa fa-linkedin fa-2x select-icon"></i></a>
                                 </li>
-                                <li><a class="btn btn-default btn-lg" href="https://www.instagram.com/max_k4iser/?hl=fr"
-                                       title="Me on Instagram" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                                <li><a class="btn btn-default btn-lg color-hover"
+                                       href="https://www.instagram.com/max_k4iser/?hl=fr"
+                                       title="Me on Instagram" target="_blank"><i
+                                                class="fa fa-instagram fa-2x select-icon"></i></a>
                                 </li>
-                                <li><a class="btn btn-default btn-lg" href="https://www.facebook.com/Miasme4/"
-                                       title="Me on Facebook" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                                <li><a class="btn btn-default btn-lg color-hover"
+                                       href="https://www.facebook.com/Miasme4/"
+                                       title="Me on Facebook" target="_blank"><i
+                                                class="fab fa-facebook fa-2x select-icon"></i></a>
                                 </li>
                             </ul>
                         </nav>
@@ -37,15 +44,17 @@
     <body>
 
     <div class="container">
+        <!-- ABOUT ME -->
         <section id="about" class="main-nav">
             <h1 class=""><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About Me</h1>
             <span class="animate-border border-black about-anime"></span>
             <div class="row row-about">
                 <div class="col-sm-4 ">
+                    <span class="circle"></span>
                     <img src="/image/apropos.jpg" alt="description" title="tool tip"
                          class="img-circle rounded-circle shadow up-hover avatar">
                 </div>
-                <div class="col-sm-8 ">
+                <div class="col-sm-8 about-me-text">
                     <h2 class="text-primary stm-font">Skills</h2>
                     <p>Full Stack Web Development</p>
                     <h2 class="text-primary stm-font">Tools</h2>
@@ -53,67 +62,135 @@
                 </div>
             </div>
         </section>
+        <!-- END ABOUT ME -->
 
+
+        <!-- EXPERIENCES -->
         <section id="experiences" class="main-nav">
             <h1 class=""><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
                 Experiences</h1>
             <span class="animate-border border-black experience-anime"></span>
+            <div class="timeline">
+                <li>
+                    <div class="direction-r">
+                        <div class="flag-wrapper">
+                            <h2 class="flag"><i class="fas fa-home"></i> Freelancer</h2>
+                            <span class="time-wrapper"><span class="time">present</span></span>
+                        </div>
+                        <div class="desc">My current employment. <br>Way better than the position before!</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="direction-l">
+                        <div class="flag-wrapper">
+                            <h2 class="flag"><i class="fas fa-graduation-cap"></i> Wilder</h2>
+                            <span class="time-wrapper"><span class="time">2020</span></span>
+                        </div>
+                        <div class="desc">Student at the Wild Code School. <br>I learned to become a web & mobile
+                            developer there
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="direction-r">
+                        <div class="flag-customer">
+                            <h2 class="flag"><i class="fas fa-headset"></i> Customer relationship</h2>
+                            <span class="time-wrapper"><span class="time">2009 - 2019</span></span>
+                        </div>
+                        <div class="desc">I spent 10 years working for a French mobile operator. <br>I have climbed
+                            several levels during my career, going from employee training to team management.
+                        </div>
+                    </div>
+                </li>
+            </div>
+
+            <div class="container container-exp">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8 text-center">
+                        <h2 class="text-primary stm-font">You can download my curriculum vitae just here</h2>
+                        <a href="/image/CV.pdf">
+                            <button class="btn-exp btn-2"><i class="fas fa-download"></i> Download</button>
+                        </a>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
 
         </section>
+        <!-- EXPERIENCES -->
 
-{#        <section id="home" class="main-nav">#}
-{#            <div class="">#}
-{#                <h1 class=""><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>#}
-{#                    Interests</h1>#}
-{#                <span class="animate-border border-black interest-anime"></span>#}
-{#                <div class="row showcase stm-font row-about">#}
-{#                    <div class="col-sm-4 hidden-xs" data-toggle="modal" data-target="#devModal">#}
-{#                        <div class="well shadow up-hover color-hover">#}
-{#                            <h1><i class="fa fa-code"></i></h1>#}
-{#                            <h2>Development</h2>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="col-sm-4 hidden-xs" data-toggle="modal" data-target="#musicModal">#}
-{#                        <div class="well shadow up-hover color-hover">#}
-{#                            <h1><i class="fas fa-guitar"></i></h1>#}
-{#                            <h2>Music</h2>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="col-sm-4 hidden-xs" data-toggle="modal" data-target="#sportModal">#}
-{#                        <div class="well shadow up-hover color-hover thumbnail shadow up-hover">#}
-{#                            <h1><i class="fas fa-futbol"></i></h1>#}
-{#                            <h2>Sport</h2>#}
-{#                            <div class="cust-caption">#}
-{#                                <a href=""><h3 class="stm-font">Test</h3></a>#}
-{#                                <p>csvsdvsdvsds</p>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </div>#}
-{#        </section>#}
 
-        <section id="portfolio" class="main-nav"><!--start portfolio-->
+        <!-- PORTFOLIO -->
+        <section id="portfolio" class="main-nav">
+            <h1 class=""><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Portfolio</h1>
+            <span class="animate-border border-black portfolio-anime"></span>
+            <div class="container portfolio-container portfolio-container-position">
+                <div class="thumbnail shadow up-hover portfolio-card">
+                    <div id="carousel">
+                        {% set i = 0 %}
+                        {% for portfolio in portfolios %}
+                            {% set i = i+1 %}
+                            <figure>
+                                <a href="{{ portfolio.url }}">
+                                    <img src="{{ vich_uploader_asset(portfolio, 'imageFile')|imagine_filter('reduc') }}"
+                                         alt="">
+                                </a>
+                            </figure>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container container-exp">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8 text-center">
+                    <h2 class="text-primary stm-font">Details and more projects right here</h2>
+                    <a href="{{ path('portfolio_index') }}">
+                        <button class="btn-exp btn-2"><i class="fas fa-network-wired"></i> Projects</button>
+                    </a>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+
+        <!-- Portfolio Modal -->
+        <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    ICI detail du portfolio
+                </div>
+            </div>
+        </div>
+        <!-- PORTFOLIO -->
+
+
+        <!-- INTERESTS -->
+        <section id="portfolio" class="main-nav">
             <h1 class=""><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
                 Interests</h1>
             <span class="animate-border border-black interest-anime"></span>
-            <div class="container portfolio-container">
-                <div class=""><!---start row-->
+            <div class="container portfolio-container interests-container">
+                <div class="">
                     <div class="row showcase stm-font row-about">
-                        <div class="col-sm-4 col-md-4" data-toggle="modal" data-target="#devModal"><!--start element 1-->
+                        <div class="col-sm-4 col-md-4" data-toggle="modal" data-target="#devModal">
                             <div class="thumbnail well shadow up-hover color-hover portfolio-card">
                                 <h1><i class="fa fa-code"></i></h1>
                                 <h2>Development</h2>
                                 <div class="cust-caption">
-                                    <p>Discover new techniques and technologies, become familiar with them and reuse them in the
+                                    <p>Discover new techniques and technologies, become familiar with them and reuse
+                                        them in the
                                         service of innovation. Here is my new hobby.
                                         A project for me? Contact me right there.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4 col-md-4" data-toggle="modal" data-target="#musicModal"><!--start element 1-->
+                        <div class="col-sm-4 col-md-4" data-toggle="modal" data-target="#musicModal">
                             <div class="thumbnail well shadow up-hover color-hover portfolio-card">
-                                <h1><i class="fas fa-guitar"></i></h1>
+                                <h1><i class="fas fa-headphones-alt"></i></h1>
                                 <h2>Music</h2>
                                 <div class="cust-caption">
                                     <p>Create new songs alone or in groups. I tap into the music
@@ -123,9 +200,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4 col-md-4" data-toggle="modal" data-target="#sportModal"><!--start element 1-->
+                        <div class="col-sm-4 col-md-4" data-toggle="modal" data-target="#sportModal">
                             <div class="thumbnail well shadow up-hover color-hover portfolio-card">
-                                <h1><i class="fas fa-futbol"></i></h1>
+                                <h1><i class="fas fa-users"></i></h1>
                                 <h2>Sport</h2>
                                 <div class="cust-caption">
                                     <p>Amateur of Indoor Soccer, I organize many meetings and tournaments.
@@ -135,12 +212,10 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-            </div><!---end row-->
-        </section> <!--end portfolio-->
-
-        <!-- Modal -->
+            </div>
+        </section>
+        <!-- INTERESTS MODAL -->
         <div class="modal fade" id="devModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
              aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -152,14 +227,17 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        Discover new techniques and technologies, become familiar with them and reuse them in the
-                        service of innovation. Here is my new hobby.
-                        A project for me? Contact me right there.
+                        <p class="text-center">Discover new techniques and technologies, become familiar with them and reuse them in the
+                        service of innovation. <br>Here is my new hobby. <br>
+                        A project for me? Contact me right there.</p>
+                        <img src="/image/contact-me.png" width="464" alt="TrainMyTeam image">
+                        <a href="{{ path('contact_new')}}">
+                            <button class="btn-exp btn-2 btn-contact-modal"><i class="fas fa-paper-plane"></i> Send</button>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="modal fade" id="musicModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
              aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -171,15 +249,17 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p>Create new songs alone or in groups. I tap into the music
-                        inspiration and motivation. The sound accompanies me on a daily basis. If you want to find out
-                        my dark part is here.</p>
-                        <iframe width="464" height="260" src="https://www.youtube.com/embed/Fu-2L39bYIg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="text-center">Create new songs alone or in groups. I tap into the music
+                            inspiration and motivation. The sound accompanies me on a daily basis. <br>If you want to find
+                            out
+                            my dark part is here.</p>
+                        <iframe width="464" height="260" src="https://www.youtube.com/embed/Fu-2L39bYIg" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="modal fade" id="sportModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
              aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -191,64 +271,41 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        Amateur of Indoor Soccer, I organize many meetings and tournaments.
+                        <p class="text-center">Amateur of Indoor Soccer, I organize many meetings and tournaments.
                         Founder of a community of players with more than 100 members,
-                        I would be delighted to meet you on the fields.
+                        I would be delighted to meet you on the fields.</p>
+                        <p class="text-center">Join the community right here</p>
+                        <a href="">
+                            <img src="/image/TMT.jpg" width="464" alt="TrainMyTeam image">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- END INTERESTS -->
 
-        <section id="portfolio" class="main-nav"><!--start portfolio-->
-            <h1 class=""><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Portfolio</h1>
-            <span class="animate-border border-black portfolio-anime"></span>
-            <div class="container portfolio-container">
-                {# <div class="row row-about"><!---start row--> #}
-                {# {% set i = 0 %} #}
-                {# {% for portfolio in portfolios %} #}
-                {# {% set i = i+1 %} #}
-                {# <div class="col-sm-4 col-md-4"><!--start element 1--> #}
-                <div class="thumbnail shadow up-hover portfolio-card">
-                    {# <img src="{{ vich_uploader_asset(portfolio, 'imageFile')|imagine_filter('reduc') }}" #}
-                    {# alt="{{ portfolio.title }}"/> #}
-                    {# <div class="cust-caption"> #}
-                    {# <a href="{{ portfolio.url }}"><h3 #}
-                    {# class="stm-font">{{ portfolio.title }}</h3></a> #}
-                    {# <p>{{ portfolio.description |raw }}</p> #}
-                    {# </div> #}
-                    <div id="carousel">
-                        {% set i = 0 %}
-                        {% for portfolio in portfolios %}
-                        {% set i = i+1 %}
-                        <figure>
-                            <a href="" data-toggle="modal" data-target=".bd-example-modal-xl">
-                                <img src="{{ vich_uploader_asset(portfolio, 'imageFile')|imagine_filter('reduc') }}"
-                                     alt="">
-                            </a>
-                        </figure>
-                        {% endfor %}<!--end element 1-->
-                    </div>
-                    {# </div> #}
-                    {# </div> #}
-                    {# {% endfor %}<!--end element 1--> #}
-                </div>
-            </div><!---end row-->
-        </section> <!--end portfolio-->
-
-        <!-- Portfolio Modal -->
-
-        <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
-             aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    ICI detail du portfolio
-                </div>
+        <!-- CONTACT -->
+        <section id="contact" class="main-nav">
+            <div class="section-heading">
+                <h1><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Contact
+                </h1>
+                <span class="animate-border border-black contact-anime"></span>
             </div>
-        </div>
+            <div class="row contact-row">
+                <div class="col-2"></div>
+                <div class="col-8 text-center">
+                    <h2 class="text-primary stm-font">You can send me a message just here</h2>
+                    <a href="{{ path('contact_new')}}">
+                        <button class="btn-exp btn-2"><i class="fas fa-paper-plane"></i> Send</button>
+                    </a>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </section>
+        <!-- END CONTACT -->
 
 
     </div><!--end container-->
-
     </body>
 
 

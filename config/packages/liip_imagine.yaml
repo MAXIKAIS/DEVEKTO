@@ -9,3 +9,9 @@ liip_imagine:
                 thumbnail:
                     size: [350, 200]
                     mode: outbound
+        portfolio:
+            quality: 100
+            filters:
+                thumbnail:
+                    size: [ 490, 320 ]
+                    mode: outbound

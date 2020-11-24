@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}DEVEKTO Contact{% endblock %}
+
+{% block body %}
+
+    <div class="section-heading text-center">
+        <h1 class="send-contact"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Send Your Message</h1>
+    </div>
+
+    {{ include('contact/_form.html.twig') }}
+{% endblock %}
