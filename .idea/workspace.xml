@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bb732f45-c04d-4269-96a3-5492095417ba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/portfolio/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/portfolio/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/app.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +157,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Prosoon" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -199,6 +199,7 @@
       <workItem from="1606207953793" duration="7954000" />
       <workItem from="1606294129888" duration="12390000" />
       <workItem from="1606308827210" duration="1621000" />
+      <workItem from="1606311018972" duration="2495000" />
     </task>
     <servers />
   </component>

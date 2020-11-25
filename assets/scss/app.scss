@@ -901,7 +901,7 @@ img {
   margin: 2em;
   position: relative;
   display:inline-block;
-  background: #202020;
+  background: black;
 }
 
 .iphone__item {
@@ -1180,15 +1180,30 @@ div.project-cont::-webkit-scrollbar-thumb:window-inactive {
 
 @media (min-width: 768px) {
   .project-frame{background: url(https://raw.githubusercontent.com/harvard-lil/awesome/develop/django/static/images/empty-display.png);background-size: contain;background-repeat: no-repeat;padding: 18px 17px;padding-left:16px;height: 309px;min-height: auto}
-  .project-cont{height: 197px;}
+  .project-cont{
+    height: 197px;
+    width: 401px;
+    margin-left: 3px;
+    margin-top: 3px;
+  }
 }
 @media (min-width: 992px) {
   .project-frame{padding: 24px 22px;padding-left:21px;height: 403px;}
-  .project-cont{height: 260px;}
+  .project-cont{
+    height: 260px;
+    width: 532px;
+    margin-left: 6px;
+    margin-top: 5px;
+  }
 }
 @media (min-width: 1200px) {
   .project-frame{padding: 29px 27px;padding-left: 26px;height: 475px;}
-  .project-cont{height: 560px;}
+  .project-cont{
+    height: 560px;
+    width: 532px;
+    margin-left: 0;
+    margin-top: 0;
+  }
 }
 
 
