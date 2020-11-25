@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bb732f45-c04d-4269-96a3-5492095417ba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/portfolio/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/portfolio/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,6 +198,7 @@
       <workItem from="1606128090233" duration="25504000" />
       <workItem from="1606207953793" duration="7954000" />
       <workItem from="1606294129888" duration="12390000" />
+      <workItem from="1606308827210" duration="1621000" />
     </task>
     <servers />
   </component>
@@ -214,6 +215,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="724" y="327" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604998980823">

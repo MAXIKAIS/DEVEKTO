@@ -132,7 +132,7 @@
                         {% for portfolio in portfolios %}
                             {% set i = i+1 %}
                             <figure>
-                                <a href="{{ portfolio.url }}">
+                                <a href="{{ path('portfolio_show', {'id':portfolio.id}) }}">
                                     <img src="{{ vich_uploader_asset(portfolio, 'imageFile')|imagine_filter('show') }}"
                                          alt="">
                                 </a>
