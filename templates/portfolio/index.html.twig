@@ -7,16 +7,21 @@
         {% for portfolio in portfolios %}
         <li class="cards__item">
             <div class="card">
+                <div class="card__title text-center"><h2 class="text-primary stm-font">{{ portfolio.title }}</h2></div>
                 <div class="card__image card__image--fence">
                     <img src="{{ vich_uploader_asset(portfolio, 'imageFile')|imagine_filter('portfolio') }}"
                          alt="">
                 </div>
                 <div class="card__content">
-                    <div class="card__title">{{ portfolio.title }}</div>
-                    <p class="card__text">{{ portfolio.description|raw }}</p>
-                    <a href="{{ path('portfolio_show', {'id': portfolio.id}) }}">
-                        <button class="btn btn--block card__btn">Project details</button>
-                    </a>
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col-8 text-center">
+                            <a href="{{ path('portfolio_show', {'id': portfolio.id}) }}">
+                                <button class="btn-exp btn-2"><i class="far fa-folder-open"></i> Project details</button>
+                            </a>
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
                 </div>
             </div>
         </li>

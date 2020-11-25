@@ -642,10 +642,6 @@ body {
   .circle {
     display: none;
   }
-
-  .img-footer {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 991px) {
@@ -666,9 +662,6 @@ body {
     font-size: 1.5rem;
   }
 
-  .img-footer {
-    display: none;
-  }
 }
 
 /* ==========================
@@ -881,6 +874,7 @@ img {
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
 .card__text {
@@ -889,6 +883,314 @@ img {
   line-height: 1.5;
   margin-bottom: 1.25rem;
 }
+
+/* ==========================
+
+ Portfolio Show
+
+ ==========================*/
+
+.show-title {
+  margin-top: 2rem;
+}
+
+.iphone {
+  width: 16.06em;
+  height: 30.6em;
+  border-radius: 1.875em;
+  margin: 2em;
+  position: relative;
+  display:inline-block;
+  background: #202020;
+}
+
+.iphone__item {
+  width: 16.06em;
+  height:1em;
+  position: absolute;
+  bottom:-2em;
+  color: darken(#1BBC9B, 10%);
+  text-align: center;
+}
+
+.iphone__power-btn{
+  width: 2.188em;
+  height: .188em;
+  background: #e0e0e0;
+  position: absolute;
+  right: 2.5em;
+  top: -.188em;
+}
+
+.iphone__left-btn {
+  width: .188em;
+  height: 1.250em;
+  top: 3.250em;
+  left: -.188em;
+  position: absolute;
+  background: #e0e0e0;
+
+  &:before {
+    content: '';
+    width: .188em;
+    height: .875em;
+    position: absolute;
+    top: 3em;
+    background: #e0e0e0;
+  }
+
+  &:after {
+    content: '';
+    width: .188em;
+    height: .875em;
+    position: absolute;
+    top: 5.5em;
+    background: #e0e0e0;
+  }
+}
+
+.iphone__details {
+  width: .438em;
+  height: .438em;
+  border-radius: 100%;
+  position: relative;
+  top: 1.313em;
+  left: 8em;
+  background: #7c7c7c;
+
+  &:before {
+    content: '';
+    width: 2.5em;
+    height: .25em;
+    border-radius: .25em;
+    position: absolute;
+    top: 1em;
+    left: -1em;
+    background: #7c7c7c;
+  }
+}
+
+.iphone__home-btn {
+  width: 2.25em;
+  height: 2.25em;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 1em;
+  right: 6.75em;
+  background: #f7f7f7;
+
+  &:before {
+    content: '';
+    width: .813em;
+    height: .813em;
+    border: .15em solid #a8a8a8;
+    border-radius: .2em;
+    position: absolute;
+    top: .7em;
+    left: .65em;
+  }
+}
+
+.iphone__screen {
+  width: 14.5em;
+  height: 22.938em;
+  position: absolute;
+  top: 3.75em;
+  left: .750em;
+  overflow: hidden;
+  background-color: white;
+}
+
+.iphone__content {
+  position: relative;
+  background-color: #333;
+  width:100%;
+  height:100%;
+}
+
+///**
+//* Navigation Defaults
+//*/
+//
+//.nav {
+//  position: absolute;
+//  z-index:100;
+//  opacity:0;
+//  transition-property: all;
+//  transition-duration: 300ms;
+//}
+//
+//.nav--active .nav {
+//  opacity:1;
+//  background-color: #333;
+//}
+//
+//.nav__list {
+//  margin:0;
+//  padding:10px;
+//}
+//
+//.nav__item {
+//  list-style-type: none;
+//  text-align: left;
+//}
+//
+//.nav__link {
+//  font-size:1.3em;
+//  text-transform: uppercase;
+//  text-decoration: none;
+//  color: #FFFFFF;
+//  opacity:1;
+//  transition: opacity 300ms ease-in-out;
+//}
+//
+///* Default navigation icon */
+//.nav__trigger {
+//  display:block;
+//  position:absolute;
+//  width:30px;
+//  height:25px;
+//  right:10px;
+//  top:10px;
+//  z-index:200;
+//}
+//
+//.nav--active .nav__trigger {
+//  opacity:0.5;
+//}
+//
+//.nav__icon {
+//  display:inline-block;
+//  position: relative;
+//  width:30px;
+//  height:5px;
+//  background-color: #FFFFFF;
+//  transition-property: background-color, transform;
+//  transition-duration: 300ms;
+//
+//  &:before,
+//  &:after {
+//    content:'';
+//    display:block;
+//    width:30px;
+//    height:5px;
+//    position: absolute;
+//    background: #FFFFFF;
+//    transition-property: margin, transform;
+//    transition-duration: 300ms;
+//
+//  }
+//
+//  &:before {
+//    margin-top:-10px;
+//  }
+//
+//  &:after {
+//    margin-top:10px;
+//  }
+//}
+//
+///* Don't nest if you don't have to. */
+//
+///**
+//* Style #1
+//*/
+//
+//.style-1 {
+//
+//  .nav {
+//    transform: translateX(-100%);
+//    width:100%;
+//    height:100%;
+//  }
+//
+//  .nav__link {
+//    opacity:0;
+//    transition-delay:500ms;
+//  }
+//
+//  .nav--active .nav__link {
+//    opacity:1;
+//  }
+//
+//  .nav--active .nav {
+//    transition: all 300ms ease-in-out;
+//    transform: translateX(0);
+//  }
+//
+//  .nav--active .nav__icon {
+//    background: rgba(0,0,0,0.0);
+//
+//    &:before {
+//      margin-top:0;
+//      transform:rotate(45deg);
+//    }
+//
+//    &:after {
+//      margin-top:0;
+//      transform:rotate(-45deg);
+//    }
+//  }
+//
+//}
+
+.project-frame {
+  margin-top: 2rem;
+  height: 502px!important;
+}
+
+.project-cont {
+  height: 338px;
+  width: 532px;
+}
+
+.project-cont::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+div.project-cont::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+div.project-cont::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(255,0,0,0.8);
+
+}
+div.project-cont::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255,0,0,0.4);
+}
+
+
+.project-frame{
+  width: 100%;
+  overflow: hidden;
+  background: url(https://raw.githubusercontent.com/harvard-lil/awesome/develop/django/static/images/empty-display.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 5.2% 4.8%;
+  padding-left: 4.6%;
+  min-height:500px;
+}
+
+@media (min-width: 768px) {
+  .project-frame{background: url(https://raw.githubusercontent.com/harvard-lil/awesome/develop/django/static/images/empty-display.png);background-size: contain;background-repeat: no-repeat;padding: 18px 17px;padding-left:16px;height: 309px;min-height: auto}
+  .project-cont{height: 197px;}
+}
+@media (min-width: 992px) {
+  .project-frame{padding: 24px 22px;padding-left:21px;height: 403px;}
+  .project-cont{height: 260px;}
+}
+@media (min-width: 1200px) {
+  .project-frame{padding: 29px 27px;padding-left: 26px;height: 475px;}
+  .project-cont{height: 560px;}
+}
+
 
 /* ==========================
 

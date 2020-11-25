@@ -15,3 +15,15 @@ liip_imagine:
                 thumbnail:
                     size: [ 490, 320 ]
                     mode: outbound
+        show:
+            quality: 100
+            filters:
+                thumbnail:
+                    size: [ 532, 338 ]
+                    mode: outbound
+        mobil:
+            quality: 100
+            filters:
+                thumbnail:
+                    size: [ 232, 367 ]
+                    mode: outbound
