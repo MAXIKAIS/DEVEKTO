@@ -2,6 +2,7 @@
 
 namespace App\Controller\Admin;
 
+use App\Entity\Contact;
 use App\Entity\Interest;
 use App\Entity\Picture;
 use App\Entity\Portfolio;
@@ -36,5 +37,6 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkToCrud('Interest', 'far fa-clipboard', Interest::class);
         yield MenuItem::linkToCrud('Portfolio', 'far fa-images', Portfolio::class);
         yield MenuItem::linkToCrud('Picture', 'far fa-images', Picture::class);
+        yield MenuItem::linkToCrud('Contact', 'far fa-address-book', Contact::class);
     }
 }
