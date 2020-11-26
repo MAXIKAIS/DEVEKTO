@@ -679,9 +679,8 @@ body {
 }
 
 .btn-contact-modal {
-  margin-top: 0rem;
-  margin-left: 32%;
-  max-width: 180px;
+  margin-top: 0;
+  max-width: 200px;
   font-size: 20px;
 }
 
@@ -1178,6 +1177,7 @@ div.project-cont::-webkit-scrollbar-thumb:window-inactive {
   min-height:500px;
 }
 
+
 @media (min-width: 768px) {
   .project-frame{background: url(https://raw.githubusercontent.com/harvard-lil/awesome/develop/django/static/images/empty-display.png);background-size: contain;background-repeat: no-repeat;padding: 18px 17px;padding-left:16px;height: 309px;min-height: auto}
   .project-cont{
@@ -1185,6 +1185,24 @@ div.project-cont::-webkit-scrollbar-thumb:window-inactive {
     width: 401px;
     margin-left: 3px;
     margin-top: 3px;
+  }
+  .dk-footer-box-info {
+    padding: 24px;
+  }
+  .cards {
+    margin-bottom: 2rem;
+  }
+  .portfolio-show {
+    margin-bottom: 14rem;
+  }
+  .form-contact {
+    margin-bottom: 38rem;
+  }
+  .log-container {
+    margin-bottom: 39rem;
+  }
+  .contact-response {
+    margin-bottom: 32rem;
   }
 }
 @media (min-width: 992px) {
@@ -1195,6 +1213,9 @@ div.project-cont::-webkit-scrollbar-thumb:window-inactive {
     margin-left: 6px;
     margin-top: 5px;
   }
+  .dk-footer-box-info {
+    padding: 24px;
+  }
 }
 @media (min-width: 1200px) {
   .project-frame{padding: 29px 27px;padding-left: 26px;height: 475px;}
@@ -1203,6 +1224,9 @@ div.project-cont::-webkit-scrollbar-thumb:window-inactive {
     width: 532px;
     margin-left: 0;
     margin-top: 0;
+  }
+  .dk-footer-box-info {
+    padding: 40px;
   }
 }
 
@@ -1232,6 +1256,10 @@ div.project-cont::-webkit-scrollbar-thumb:window-inactive {
 
 .send-contact {
   margin-top: 2rem;
+}
+
+.btn-contact-send {
+  margin-top: 0;
 }
 
 /* ==========================
@@ -1364,7 +1392,6 @@ p {
 .dk-footer {
   padding-top: 2rem;
   background-color: #151414;
-  position: relative;
   z-index: 2;
 }
 
@@ -1391,7 +1418,6 @@ p {
 
 .dk-footer-box-info {
   background: #202020;
-  padding: 40px;
   z-index: 2;
   height: fit-content;
   text-align: center;
