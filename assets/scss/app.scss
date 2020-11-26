@@ -250,8 +250,12 @@ body {
   margin-top: 4rem;
 }
 
+.hard-skills {
+  margin-bottom: 2rem;
+}
+
 .about-me-text {
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
 }
 
 .circle {
@@ -684,6 +688,10 @@ body {
   font-size: 20px;
 }
 
+.modal-margin {
+  margin-bottom: 0;
+}
+
 /* ==========================
 
  Portfolio
@@ -871,7 +879,7 @@ img {
   color: #696969;
   font-size: 1.25rem;
   font-weight: 300;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 1rem;
 }

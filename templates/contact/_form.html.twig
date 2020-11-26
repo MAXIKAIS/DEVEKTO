@@ -3,21 +3,21 @@
     <div class="card card-container card-contact">
         <div class="row text-center">
             <div class="col-6">
-                {{ form_row(form.name, {'name': 'Your name '}) }}
+                {{ form_row(form.name, {'name': 'Votre nom '}) }}
             </div>
             <div class="col-6">
-                {{ form_row(form.email, {'name': 'Your email '}) }}
+                {{ form_row(form.email, {'name': 'Votre email '}) }}
             </div>
         </div>
         <div class="row">
             <div class="col-12 textarea-contact">
-                {{ form_row(form.message) }}
+                {{ form_row(form.message, {'message': 'Votre message'}) }}
             </div>
         </div>
         <div class="row text-center">
             <div class="col-1"></div>
             <div class="col-10">
-                <button class="btn-exp btn-2"><i class="fas fa-paper-plane"></i> {{ button_label|default('Send') }}</button>
+                <button class="btn-exp btn-2"><i class="fas fa-paper-plane"></i> {{ button_label|default('Envoyer') }}</button>
             </div>
             <div class="col-1"></div>
         </div>

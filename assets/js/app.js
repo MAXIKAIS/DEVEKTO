@@ -17,7 +17,7 @@ console.log('Hello Webpack Encore! Edit me in assets/app.js');
 
 // fonction pour afficher mon nom
 var i=0;
-var mytext="Web & Mobile Developer";
+var mytext="Developpeur Web & Mobile";
 var mytextelem=document.getElementById("subtitle");
 var mycurrenttext="";
 function myFunction () {
@@ -33,7 +33,7 @@ function myFunction () {
 myFunction ();
 
 $(document).ready(function(){
-    $('#portfolio .thumbnail').hover(function(){
+    $('#interests .thumbnail').hover(function(){
             $(this).children(".cust-caption").slideDown();
         },
         function(){
