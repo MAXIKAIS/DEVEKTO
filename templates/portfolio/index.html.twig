@@ -9,19 +9,10 @@
             <div class="card">
                 <div class="card__title text-center"><h2 class="text-primary stm-font">{{ portfolio.title }}</h2></div>
                 <div class="card__image card__image--fence">
+                    <a href="{{ path('portfolio_show', {'id': portfolio.id}) }}">
                     <img src="{{ vich_uploader_asset(portfolio, 'imageFile')|imagine_filter('portfolio') }}"
                          alt="">
-                </div>
-                <div class="card__content">
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col-8 text-center">
-                            <a href="{{ path('portfolio_show', {'id': portfolio.id}) }}">
-                                <button class="btn-exp btn-2"><i class="far fa-folder-open"></i> Détails du projet</button>
-                            </a>
-                        </div>
-                        <div class="col-2"></div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </li>
